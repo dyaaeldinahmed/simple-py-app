@@ -1,9 +1,8 @@
-import os
+
 from flask import Flask
 
-message = os.environ['MESSAGE']
 app = Flask(__name__)
-
+message = "helloooo"
 @app.route('/')
 def hello():
     return 'Our message is {}.\n'.format(message)
